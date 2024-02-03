@@ -1,0 +1,20 @@
+vector1= [1,2,3]  # VECTOR 1 WHICH IS DERIVED FROM THE MANDALA OF CLIENT 1
+vector2= [1,2,1]  # VECTOR 2 WHICH IS DERIVED FROM THE MANDALA OF CLIENT 2
+
+def crossprod(vector1,vector2):
+    vector3 = [0,0,0]    
+
+    vector3[0] = vector1[1]*vector2[2] - vector1[2]*vector2[1]   
+    vector3[1] = vector1[0]*vector2[2] - vector1[2]*vector2[0]
+    vector3[2] = vector1[0]*vector2[1] - vector1[1]*vector2[0]
+
+
+# MAKING A FAKE VECTOR
+    
+def fake_vector3(vector3):
+    fake_list = [ [11,0.5,-17] , [13,107,12345]]   # LIST OF NUMBERS WHICH CAN BE USED TO MAKE THE FAKE VECTOR ( MAY OR MAY NOT BE DERIVED FROM MANDALA )
+    fake_vector = [0,0,0]
+
+    fake_vector[0] = vector3[0] + fake_list[0][0]    # i OF FAKE VECTOR
+    fake_vector[1] = vector3[1] + fake_list[0][1]    # j OF FAKE VECTOR
+    fake_vector[2] = vector3[2] + fake_list[0][2]    # k OF FAKE VECTOR
